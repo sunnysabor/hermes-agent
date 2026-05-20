@@ -569,6 +569,10 @@ export const uk: Translations = {
     lanesByProfile: "Доріжки за профілем",
     nudgeDispatcher: "Підштовхнути диспетчер",
     refresh: "Оновити",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "вибрано",
     complete: "Завершити",
     archive: "Архівувати",

@@ -569,6 +569,10 @@ export const af: Translations = {
     lanesByProfile: "Bane per profiel",
     nudgeDispatcher: "Por versender aan",
     refresh: "Verfris",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "gekies",
     complete: "Voltooi",
     archive: "Argiveer",

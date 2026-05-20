@@ -569,6 +569,10 @@ export const tr: Translations = {
     lanesByProfile: "Profile göre şeritler",
     nudgeDispatcher: "Dispatcher'ı dürt",
     refresh: "Yenile",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "seçili",
     complete: "Tamamla",
     archive: "Arşivle",

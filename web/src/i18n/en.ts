@@ -570,6 +570,10 @@ export const en: Translations = {
     lanesByProfile: "Lanes by profile",
     nudgeDispatcher: "Nudge dispatcher",
     refresh: "Refresh",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "selected",
     complete: "Complete",
     archive: "Archive",

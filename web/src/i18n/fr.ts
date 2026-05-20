@@ -568,6 +568,10 @@ export const fr: Translations = {
     lanesByProfile: "Couloirs par profil",
     nudgeDispatcher: "Solliciter le dispatcher",
     refresh: "Rafraîchir",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "sélectionné(s)",
     complete: "Terminer",
     archive: "Archiver",

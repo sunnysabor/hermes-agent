@@ -569,6 +569,10 @@ export const zhHant: Translations = {
     lanesByProfile: "依設定檔分組",
     nudgeDispatcher: "觸發排程器",
     refresh: "重新整理",
+    newTask: "+ 新增任務",
+    newTaskTitle: "新增任務",
+    newTaskDescription:
+      "在此看板建立一個就緒任務。排程器可在下一輪輪詢時認領它。",
     selected: "已選取",
     complete: "完成",
     archive: "封存",

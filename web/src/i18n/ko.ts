@@ -569,6 +569,10 @@ export const ko: Translations = {
     lanesByProfile: "프로필별 레인",
     nudgeDispatcher: "디스패처 깨우기",
     refresh: "새로 고침",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "선택됨",
     complete: "완료",
     archive: "보관",

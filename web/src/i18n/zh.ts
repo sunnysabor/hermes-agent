@@ -565,6 +565,10 @@ export const zh: Translations = {
     lanesByProfile: "按配置分组",
     nudgeDispatcher: "触发调度器",
     refresh: "刷新",
+    newTask: "+ 新建任务",
+    newTaskTitle: "新建任务",
+    newTaskDescription:
+      "在此看板创建一个就绪任务。调度器可在下一轮轮询时认领它。",
     selected: "已选中",
     complete: "完成",
     archive: "归档",

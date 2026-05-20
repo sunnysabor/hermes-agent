@@ -569,6 +569,10 @@ export const hu: Translations = {
     lanesByProfile: "Sávok profil szerint",
     nudgeDispatcher: "Dispatcher noszogatása",
     refresh: "Frissítés",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "kiválasztva",
     complete: "Befejezés",
     archive: "Archiválás",

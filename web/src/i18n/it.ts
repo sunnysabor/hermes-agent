@@ -568,6 +568,10 @@ export const it: Translations = {
     lanesByProfile: "Corsie per profilo",
     nudgeDispatcher: "Sollecita dispatcher",
     refresh: "Aggiorna",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "selezionato/i",
     complete: "Completa",
     archive: "Archivia",

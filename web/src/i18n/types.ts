@@ -582,6 +582,9 @@ export interface Translations {
     lanesByProfile: string;
     nudgeDispatcher: string;
     refresh: string;
+    newTask: string;
+    newTaskTitle: string;
+    newTaskDescription: string;
     selected: string;
     complete: string;
     archive: string;

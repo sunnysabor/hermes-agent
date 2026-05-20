@@ -569,6 +569,10 @@ export const ga: Translations = {
     lanesByProfile: "Lánaí de réir profile",
     nudgeDispatcher: "Spreag an dispatcher",
     refresh: "Athnuaigh",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "roghnaithe",
     complete: "Cuir i gcrích",
     archive: "Cartlannaigh",

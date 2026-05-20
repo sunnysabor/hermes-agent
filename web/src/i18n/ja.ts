@@ -569,6 +569,10 @@ export const ja: Translations = {
     lanesByProfile: "プロファイル別レーン",
     nudgeDispatcher: "ディスパッチャーを起動",
     refresh: "更新",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "選択中",
     complete: "完了",
     archive: "アーカイブ",

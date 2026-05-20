@@ -569,6 +569,10 @@ export const ru: Translations = {
     lanesByProfile: "Дорожки по профилю",
     nudgeDispatcher: "Подтолкнуть диспетчер",
     refresh: "Обновить",
+    newTask: "+ New task",
+    newTaskTitle: "New task",
+    newTaskDescription:
+      "Creates a Ready task on this board. The dispatcher can claim it on the next tick.",
     selected: "выбрано",
     complete: "Завершить",
     archive: "В архив",
