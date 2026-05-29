@@ -53,6 +53,7 @@ class CustomProfile(ProviderProfile):
 
 custom = CustomProfile(
     name="custom",
+    default_headers={"User-Agent": "curl/8.7.1"},
     aliases=(
         "ollama",
         "local",

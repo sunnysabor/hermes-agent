@@ -1,0 +1,6 @@
+name: openai-compatible
+version: 0.1.0
+description: Generic OpenAI-compatible image generation backend
+kind: backend
+provides_tools:
+  - image_generate

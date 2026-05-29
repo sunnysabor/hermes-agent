@@ -1080,6 +1080,20 @@ def dump_api_request_debug(
         except Exception as e:
             _ra().logger.debug("Could not extract API key for debug dump: %s", e)
 
+        request_headers = {
+            "Authorization": f"Bearer {agent._mask_api_key_for_logs(api_key)}",
+            "Content-Type": "application/json",
+        }
+        try:
+            default_headers = getattr(agent, "_client_kwargs", {}).get("default_headers")
+            if isinstance(default_headers, dict):
+                for header_name, header_value in default_headers.items():
+                    if str(header_name).lower() == "authorization":
+                        continue
+                    request_headers[header_name] = header_value
+        except Exception:
+            pass
+
         dump_payload: Dict[str, Any] = {
             "timestamp": datetime.now().isoformat(),
             "session_id": agent.session_id,
@@ -1087,10 +1101,7 @@ def dump_api_request_debug(
             "request": {
                 "method": "POST",
                 "url": f"{agent.base_url.rstrip('/')}{'/responses' if agent.api_mode == 'codex_responses' else '/chat/completions'}",
-                "headers": {
-                    "Authorization": f"Bearer {agent._mask_api_key_for_logs(api_key)}",
-                    "Content-Type": "application/json",
-                },
+                "headers": request_headers,
                 "body": body,
             },
         }

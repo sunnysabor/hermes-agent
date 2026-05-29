@@ -134,6 +134,33 @@ def test_gmi_base_url_picks_up_profile_user_agent(mock_openai):
     assert headers["User-Agent"].startswith("HermesAgent/")
 
 
+
+@patch("run_agent.OpenAI")
+def test_custom_provider_unknown_base_url_uses_profile_user_agent(mock_openai):
+    """Custom OpenAI-compatible endpoints should send a generic UA.
+
+    Some relay providers block the OpenAI Python SDK default User-Agent on
+    /v1/responses. The custom provider profile supplies a curl-like UA, and
+    the unknown-base-url branch must preserve it instead of clearing headers.
+    """
+    mock_openai.return_value = MagicMock()
+    agent = AIAgent(
+        api_key="test-key",
+        base_url="https://newapi.example.com/v1",
+        model="gpt-5.5",
+        provider="custom",
+        api_mode="codex_responses",
+        quiet_mode=True,
+        skip_context_files=True,
+        skip_memory=True,
+    )
+
+    agent._apply_client_headers_for_base_url("https://newapi.example.com/v1")
+
+    headers = agent._client_kwargs["default_headers"]
+    assert headers["User-Agent"] == "curl/8.7.1"
+
+
 @patch("run_agent.OpenAI")
 def test_unknown_base_url_clears_default_headers(mock_openai):
     mock_openai.return_value = MagicMock()
